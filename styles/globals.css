@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -8,19 +10,71 @@
 	box-sizing: border-box;
 }
 
-.footer {
+header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+header > .icon {
+	margin-bottom: -0.5rem;
+}
+
+header > .name {
+	font-size: 3rem;
+	font-weight: bolder;
+	margin: 1rem;
+}
+
+@keyframes LightMode {
+	from {transform: translateX(200%);}
+	to {transform: translateX(20%);}
+}
+
+.toogle-lightmode {
+	animation-name: LightMode;
+	animation-duration: 0.3s;
+}
+
+@keyframes DarkMode {
+	from {transform: translateX(20%);}
+	to {transform: translateX(200%);}
+}
+
+.toogle-darkmode {
+	animation-name: DarkMode;
+	animation-duration: 0.3s;
+}
+
+header > .title {
+	font-size: 2rem;
+	font-weight: 200;
+	margin: 1rem;
+}
+
+footer {
+	display: flex;
+	background-color: black;
+	height: 150px;
+	padding: 1rem;
+	align-items: center;
+}
+
+footer > .grid-footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	background-color: black;
-	height: 150px;
 }
 
-.footer > * > .col {
+footer > .grid-footer > * > .col {
 	margin: 1rem;
 }
 
-.footer > * > p {
+footer > .grid-footer > * > p {
 	color: white !important;
 }

@@ -13,11 +13,14 @@ export const DarkTheme = createTheme({
 		},
 		background: {
 			default: '#1f1a1d',
-			paper: '#4b2716',
+			paper: '#eae0e3',
 		},
 		error: {
 			main: '#ffb4ab',
 			contrastText: '#690005',
 		}
+	},
+	typography: {
+		fontFamily: 'Ubuntu',
 	}
 })

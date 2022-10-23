@@ -21,9 +21,7 @@ type ThemeType = {
 }
 
 type ThemePaylod = {
-	[ThemeTypes.Change] : {
-		theme: Theme;
-	}
+	[ThemeTypes.Change] : Theme;
 }
 
 
@@ -33,7 +31,7 @@ export const themeReducer = (state: ThemeType, action: ThemeActions) =>  {
 	switch(action.type) {
 		case ThemeTypes.Change:
 			let themeChanged: Theme;
-			if(action.payload.theme === LightTheme){
+			if(action.payload === DarkTheme){
 				themeChanged = LightTheme
 			}
 			else{

@@ -19,5 +19,8 @@ export const LightTheme = createTheme({
 			main: '#226d00',
 			contrastText: '#ffffff',
 		}
+	},
+	typography: {
+		fontFamily: 'Ubuntu',
 	}
 })
