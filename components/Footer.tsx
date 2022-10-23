@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import { IconContext } from 'react-icons'
 import {AiFillGithub, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import { useMain } from '../context'
 
 const Footer = () => {
 	return (
