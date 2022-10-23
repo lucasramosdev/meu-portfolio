@@ -56,6 +56,27 @@ header > .title {
 	margin: 1rem;
 }
 
+header > .flags {
+	position: absolute;
+	padding: 1rem;
+	bottom: 0;
+}
+
+header > .flags > .flag {
+	height: 3rem;
+	width: 5rem;
+	margin: 0.5rem;
+	filter: brightness(50%);
+	transition: ease-in-out all 0.5s;
+	border-radius: 20%;
+}
+
+header> .flags > .flag:hover{
+	filter: brightness(100%);
+	transition: ease-in-out all 0.5s;
+}
+
+
 footer {
 	display: flex;
 	background-color: black;

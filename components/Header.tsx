@@ -3,6 +3,7 @@ import React from 'react'
 import { useMain } from '../context'
 import {FaLaptopCode} from 'react-icons/fa'
 import { ThemeTypes } from '../context/reducers';
+import Flag from 'react-world-flags';
 
 const Header = () => {
 	const {state, dispatch} = useMain();
@@ -83,6 +84,10 @@ const Header = () => {
 			<Typography variant='h2' className='title'>
 				FullStack Developer
 			</Typography>
+			<div className="flags">
+				<Flag code="br" className='flag'/>
+				<Flag code="usa" className='flag'/>
+			</div>
 		</header>
 	)
 }
