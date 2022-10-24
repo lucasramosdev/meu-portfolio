@@ -1,9 +1,10 @@
 import { styled, Switch, Typography} from '@mui/material';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useMain } from '../context'
 import {FaLaptopCode} from 'react-icons/fa'
 import Flag from 'react-world-flags';
 import { ThemeTypes } from '../context/reducers/theme.reducer';
+import { LanguageTypes } from '../context/reducers/language.reducer';
 
 const Header = () => {
 	const {state, dispatch} = useMain();
@@ -27,6 +28,8 @@ const Header = () => {
 			Switch.className = `${Switch.className} toogle-lightmode`
 		}
 	}
+
+
 
 	const MaterialUISwitch = styled(Switch, {})({
 		width: "10rem",
@@ -85,8 +88,8 @@ const Header = () => {
 				FullStack Developer
 			</Typography>
 			<div className="flags">
-				<Flag code="br" className='flag'/>
-				<Flag code="usa" className='flag'/>
+				<Flag code="br" className={`flag ${state.language === 'pt-BR' ? 'flag-selected' : ''}`} onClick={() => dispatch({type: LanguageTypes.Change, payload: 'pt-BR'})} />
+				<Flag code="usa" className={`flag ${state.language === 'en' ? 'flag-selected' : ''}`} onClick={() => dispatch({type: LanguageTypes.Change, payload: 'en'})} />
 			</div>
 		</header>
 	)

@@ -1,4 +1,5 @@
 import { ActionMap } from ".";
+import CookieService from "../../services/CookieService";
 
 export enum LanguageTypes {
 	Change = 'CHANGE_LANGUAGE'
@@ -13,8 +14,13 @@ export type LanguageActions = ActionMap<LanguagePayload>[keyof ActionMap<Languag
 export const languageReducer = (state: string, action: LanguageActions) => {
 	switch(action.type) {
 		case LanguageTypes.Change:
-
-			return state;
+      const newLanguage = action.payload;
+      const actualLanguage = state;
+      if(newLanguage !== actualLanguage) {
+        CookieService.set('i18next', newLanguage, {"sameSite": "strict"})
+        return newLanguage
+      }
+      return newLanguage
 
 
 		default:

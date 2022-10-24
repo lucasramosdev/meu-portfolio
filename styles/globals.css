@@ -71,6 +71,10 @@ header > .flags > .flag {
 	border-radius: 20%;
 }
 
+header > .flags > .flag-selected {
+	filter: brightness(100%);
+}
+
 header> .flags > .flag:hover{
 	filter: brightness(100%);
 	transition: ease-in-out all 0.5s;
