@@ -79,7 +79,6 @@ header> .flags > .flag:hover{
 
 footer {
 	display: flex;
-	background-color: black;
 	height: 150px;
 	padding: 1rem;
 	align-items: center;
@@ -94,8 +93,4 @@ footer > .grid-footer {
 
 footer > .grid-footer > * > .col {
 	margin: 1rem;
-}
-
-footer > .grid-footer > * > p {
-	color: white !important;
 }

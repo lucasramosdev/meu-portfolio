@@ -2,12 +2,16 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import { IconContext } from 'react-icons'
 import {AiFillGithub, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import { useMain } from '../context'
 
 const Footer = () => {
+	const {state, dispatch} = useMain();
+
+	const theme = state.theme.mode;
 	return (
-		<footer>
+		<footer style={{backgroundColor: theme.palette.background.paper}}>
 			<Grid container className="grid-footer">
-				<IconContext.Provider value={{color: "white", size: "3rem"}}>
+				<IconContext.Provider value={{color: theme.palette.primary.contrastText, size: "3rem"}}>
 				<Grid item>
 							<a href='https://github.com/lucasramosdev' target='_blank' className='col'>
 								<AiFillGithub/>
@@ -21,7 +25,7 @@ const Footer = () => {
 				</Grid>
 				</IconContext.Provider>
 				<Grid item>
-					<p className='col'>
+					<p className='col' style={{color: theme.palette.primary.contrastText}}>
 						Copyright © Lucas Ramos
 					</p>
 				</Grid>
