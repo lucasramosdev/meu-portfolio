@@ -2,19 +2,17 @@ import { Theme } from "@mui/material";
 import { createContext, Dispatch, useContext, useReducer } from "react";
 import { DarkTheme, LightTheme } from "../themes";
 import {themeReducer} from './reducers'
+import { languageReducer } from "./reducers/language.reducer";
 
-type ThemeType = {
-	mode: Theme;
-}
 
 type InitialStateType = {
-	theme: ThemeType;
+	theme: Theme;
+	language: string;
 }
 
 const initialState = {
-	theme: {
-		mode: LightTheme
-	}
+	theme: LightTheme,
+	language: 'pt-Br'
 }
 
 const mainContext = createContext<{
@@ -25,8 +23,9 @@ const mainContext = createContext<{
 	dispatch: () => null
 });
 
-const mainReducer = ({theme}: any, action: any) => ({
-	theme: themeReducer(theme, action)
+const mainReducer = ({theme, language}: any, action: any) => ({
+	theme: themeReducer(theme, action),
+	language: languageReducer(language, action)
 });
 
 

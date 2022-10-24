@@ -1,33 +1,19 @@
 import { Theme } from "@mui/material";
-import { DarkTheme, LightTheme } from "../themes";
-
-type ActionMap<M extends { [index: string]: any }> = {
-	[Key in keyof M]: M[Key] extends undefined
-	  ? {
-		  type: Key;
-		}
-	  : {
-		  type: Key;
-		  payload: M[Key];
-		}
-  };
+import { DarkTheme, LightTheme } from '../../themes';
+import { ActionMap } from ".";
 
 export enum ThemeTypes {
 	Change = 'CHANGE_THEME'
 }
 
-type ThemeType = {
-	mode: Theme;
-}
-
 type ThemePaylod = {
-	[ThemeTypes.Change] : Theme;
+	[ThemeTypes.Change]: Theme;
 }
 
 
 export type ThemeActions = ActionMap<ThemePaylod>[keyof ActionMap<ThemePaylod>]
 
-export const themeReducer = (state: ThemeType, action: ThemeActions) =>  {
+export const themeReducer = (state: Theme, action: ThemeActions) =>  {
 	switch(action.type) {
 		case ThemeTypes.Change:
 			let themeChanged: Theme;
@@ -38,10 +24,7 @@ export const themeReducer = (state: ThemeType, action: ThemeActions) =>  {
 				themeChanged = DarkTheme
 			}
 
-			return {
-				...state,
-				mode: themeChanged
-			}
+			return themeChanged;
 
 
 		default:

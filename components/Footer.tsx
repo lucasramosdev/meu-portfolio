@@ -7,7 +7,7 @@ import { useMain } from '../context'
 const Footer = () => {
 	const {state, dispatch} = useMain();
 
-	const theme = state.theme.mode;
+	const theme = state.theme;
 	return (
 		<footer style={{backgroundColor: theme.palette.background.paper}}>
 			<Grid container className="grid-footer">

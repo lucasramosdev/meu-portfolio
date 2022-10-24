@@ -2,13 +2,13 @@ import { styled, Switch, Typography} from '@mui/material';
 import React from 'react'
 import { useMain } from '../context'
 import {FaLaptopCode} from 'react-icons/fa'
-import { ThemeTypes } from '../context/reducers';
 import Flag from 'react-world-flags';
+import { ThemeTypes } from '../context/reducers/theme.reducer';
 
 const Header = () => {
 	const {state, dispatch} = useMain();
 
-	const theme = state.theme.mode;
+	const theme = state.theme;
 
 	const changeTheme = async() => {
 		await dispatch({

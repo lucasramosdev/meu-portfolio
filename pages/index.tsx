@@ -9,7 +9,7 @@ import { useMain } from '../context'
 const Home: NextPage = () => {
 	const {state, dispatch} = useMain()
 
-  const theme = state.theme.mode;
+  const theme = state.theme;
   return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline/>
