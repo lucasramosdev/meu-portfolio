@@ -4,6 +4,14 @@
     "lucas_ramos" : "🖖 I'm Lucas Ramos. A young man from Salvador - Bahia who wants, through technology 💻, to improve the lives of everyone around him. I'm always eager to learn new things 💡, but unhappy when I have to repeat the same activities day after day 📉. Playing 🎮 and following the news 📰 about technology are certainly my two best hobbies. 🤩",
     "projetos": "Projects",
     "tecnologias": "Technologies",
+		"quizz_app": {
+			"descricao": "A quiz with questions personalized for the user that, in addition to delivering the result at the end, also sends an email with the details of their answers. It was also made exclusively for totems and mobile devices.",
+			"features": [
+				"Custom questions",
+				"Storing user responses in a MongoDB",
+				"Sending an email with details of the user's responses"
+			]
+		},
     "quero_ler": {
 			"descricao": "An application for mobile devices that aims to distribute book pdf's to people who don't have access in a simple wa and fast, with just one login.",
 			"features": [

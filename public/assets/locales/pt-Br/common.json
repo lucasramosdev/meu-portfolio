@@ -4,6 +4,14 @@
 	"lucas_ramos" : "🖖 Eu sou Lucas Ramos. Um jovem baiano que deseja, através da tecnologia 💻, melhorar a vida de todos ao seu redor. Estou sempre ávido para aprender novas coisas 💡, porém descontente quando tenho que sempre repetir as mesmas atividades dia após dia 📉. Jogar 🎮 e acompanhar as notícias 📰 sobre tecnologia são certamente os meus dois melhores hobbies. 🤩",
 	"projetos": "Projetos",
 	"tecnologias": "Tecnologias",
+	"quizz_app": {
+		"descricao": "Um quizz com perguntas perguntas personalizadas para o usuário que, além de entregar o resultado ao final, ainda envia um e-mail os detalhes de suas respostas. Também foi feito exlusivamente para totens e dispositivos móveis.",
+		"features": [
+			"Perguntas personalizadas",
+			"Armazenamento das respostas dos usuários em um MongoDB",
+			"Envio de e-mail com detalhes das respostas do usuário"
+		]
+	},
 	"quero_ler": {
 		"descricao": "Uma aplicação para dispositivos móveis que visa distribuir pdf's de livro para pessoas que não possuem acesso de uma forma simples e rápida, bastando apenas um login.",
 		"features": [
