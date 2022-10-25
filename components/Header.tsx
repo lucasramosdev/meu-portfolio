@@ -5,11 +5,16 @@ import {FaLaptopCode} from 'react-icons/fa'
 import Flag from 'react-world-flags';
 import { ThemeTypes } from '../context/reducers/theme.reducer';
 import { LanguageTypes } from '../context/reducers/language.reducer';
+import { useRouter } from 'next/router';
 
 const Header = () => {
 	const {state, dispatch} = useMain();
 
 	const theme = state.theme;
+
+	const language = state.language;
+
+	const router = useRouter();
 
 	const changeTheme = async() => {
 		await dispatch({
@@ -27,6 +32,15 @@ const Header = () => {
 		else {
 			Switch.className = `${Switch.className} toogle-lightmode`
 		}
+	}
+
+	const changeLanguage = async(newLanguage: string) => {
+		await dispatch({
+			type: LanguageTypes.Change, payload: newLanguage
+		})
+
+		const {pathname, asPath, query} = router;
+		router.push({pathname, query}, asPath, {locale: newLanguage})
 	}
 
 
@@ -88,8 +102,8 @@ const Header = () => {
 				FullStack Developer
 			</Typography>
 			<div className="flags">
-				<Flag code="br" className={`flag ${state.language === 'pt-BR' ? 'flag-selected' : ''}`} onClick={() => dispatch({type: LanguageTypes.Change, payload: 'pt-BR'})} />
-				<Flag code="usa" className={`flag ${state.language === 'en' ? 'flag-selected' : ''}`} onClick={() => dispatch({type: LanguageTypes.Change, payload: 'en'})} />
+				<Flag code="br" className={`flag ${language === 'pt-BR' ? 'flag-selected' : ''}`} onClick={() => changeLanguage('pt-BR')} />
+				<Flag code="usa" className={`flag ${language === 'en' ? 'flag-selected' : ''}`} onClick={() => changeLanguage('en')} />
 			</div>
 		</header>
 	)

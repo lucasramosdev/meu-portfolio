@@ -12,12 +12,13 @@ import { useEffect } from 'react'
 
 const Home: NextPage = () => {
 	const {state} = useMain()
+	const language = state.language;
 	const theme = state.theme;
 	const router = useRouter();
 
 	useEffect(() => {
 		const {pathname, asPath, query} = router;
-		router.push({pathname, query}, asPath, {locale: 'pt-BR'})
+		router.push({pathname, query}, asPath, {locale: language})
 	}, [])
   return (
 		<>
