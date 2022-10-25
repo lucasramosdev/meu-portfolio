@@ -97,10 +97,10 @@ const Header = () => {
 			<Typography variant='h1' className='name'>
 				Lucas Ramos
 			</Typography>
-			<MaterialUISwitch onChange={changeTheme} className='toogle-theme'/>
 			<Typography variant='h2' className='title'>
 				FullStack Developer
 			</Typography>
+			<MaterialUISwitch onChange={changeTheme} className='toogle-theme'/>
 			<div className="flags">
 				<Flag code="br" className={`flag ${language === 'pt-BR' ? 'flag-selected' : ''}`} onClick={() => changeLanguage('pt-BR')} />
 				<Flag code="usa" className={`flag ${language === 'en' ? 'flag-selected' : ''}`} onClick={() => changeLanguage('en')} />
