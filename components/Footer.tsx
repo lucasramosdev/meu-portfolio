@@ -9,7 +9,7 @@ const Footer = () => {
 
 	const theme = state.theme;
 	return (
-		<footer style={{backgroundColor: theme.palette.background.paper}}>
+		<footer style={{backgroundColor: theme.palette.background.default}}>
 			<Grid container className="grid-footer">
 				<IconContext.Provider value={{color: theme.palette.primary.main, size: "3rem"}}>
 				<Grid item>
