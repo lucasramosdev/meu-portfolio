@@ -40,7 +40,7 @@ const Header = () => {
 		})
 
 		const {pathname, asPath, query} = router;
-		router.push({pathname, query}, asPath, {locale: newLanguage})
+		router.push({pathname, query}, asPath, {locale: newLanguage, scroll: false});
 	}
 
 

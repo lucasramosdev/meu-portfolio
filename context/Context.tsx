@@ -13,7 +13,7 @@ type InitialStateType = {
 
 const initialState = {
 	theme: LightTheme,
-	language: 'pt-BR'
+	language: ''
 }
 
 const mainContext = createContext<{
@@ -36,10 +36,10 @@ export const ContextProvider = ({children}: any) => {
 	const [state, dispatch] = useReducer(mainReducer, initialState)
 
 	useEffect(() => {
-		const actualLanguage = CookieService.get('language');
+		const actualLanguage = CookieService.get('NEXT_LOCALE');
+		console.log(actualLanguage)
 		if(!actualLanguage) {
 			dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'})
-			CookieService.set('language', 'pt-BR', {"sameSite": "strict"})
 		}
 		else {
 			dispatch({type: 'CHANGE_LANGUAGE', payload: actualLanguage})

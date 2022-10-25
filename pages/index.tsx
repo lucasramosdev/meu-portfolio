@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
 	useEffect(() => {
 		const {pathname, asPath, query} = router;
-		router.push({pathname, query}, asPath, {locale: language})
+		router.push({pathname, query}, asPath, {locale: language, scroll: false});
 	}, [])
   return (
 		<>
@@ -31,9 +31,6 @@ const Home: NextPage = () => {
 							<meta name="viewport" content="width=device-width, initial-scale=1"/>
 						</Head>
 						<Main />
-						<Trans i18nKey='Sobre mim'>
-							Sobre mim
-						</Trans>
 						<Footer/>
 					</div>
 				</ThemeProvider>

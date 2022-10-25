@@ -17,7 +17,7 @@ export const languageReducer = (state: string, action: LanguageActions) => {
       const newLanguage = action.payload;
       const actualLanguage = state;
       if(newLanguage !== actualLanguage) {
-        CookieService.set('language', newLanguage, {"sameSite": "strict"})
+        CookieService.set('NEXT_LOCALE', newLanguage, {"sameSite": "strict"})
         return newLanguage
       }
       return newLanguage
