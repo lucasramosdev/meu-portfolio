@@ -11,7 +11,7 @@ const Footer = () => {
 	return (
 		<footer style={{backgroundColor: theme.palette.background.paper}}>
 			<Grid container className="grid-footer">
-				<IconContext.Provider value={{color: theme.palette.primary.contrastText, size: "3rem"}}>
+				<IconContext.Provider value={{color: theme.palette.primary.main, size: "3rem"}}>
 				<Grid item>
 							<a href='https://github.com/lucasramosdev' target='_blank' className='col'>
 								<AiFillGithub/>
@@ -25,7 +25,7 @@ const Footer = () => {
 				</Grid>
 				</IconContext.Provider>
 				<Grid item>
-					<p className='col' style={{color: theme.palette.primary.contrastText}}>
+					<p className='col' style={{color: theme.palette.primary.main}}>
 						Copyright © Lucas Ramos
 					</p>
 				</Grid>
