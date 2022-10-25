@@ -1,25 +1,41 @@
 {
-    "Sobre mim": "About me",
-    "Olá! :D": "Hi! :D",
-    "🖖 Eu sou Lucas Ramos. Um jovem baiano que deseja, através da tecnologia 💻, melhorar a vida de todos ao seu redor. Estou sempre ávido para aprender novas coisas 💡, porém descontente quando tenho que sempre repetir as mesmas atividades dia após dia 📉. Jogar 🎮 e acompanhar as notícias 📰 sobre tecnologia são certamente os meus dois melhores hobbies. 🤩 " : "🖖 I'm Lucas Ramos. A young man from Bahia who wants, through technology 💻, to improve the lives of everyone around him. I'm always eager to learn new things 💡, but unhappy when I have to repeat the same activities day after day 📉. Playing 🎮 and following the news 📰 about technology are certainly my two best hobbies. 🤩",
-    "Projetos": "Projects",
-    "Tecnologias": "Technologies",
-    "Uma aplicação para dispositivos móveis que visa distribuir pdf's de livro para pessoas que não possuem acesso de uma forma simples e rápida, bastando apenas um login." : "An application for mobile devices that aims to distribute book pdf's to people who don't have access in a simple wa and fast, with just one login.",
-    "Coleção de livros favoritos": "Favorite book collection",
-    "Armazenamento da última página vista": "Last viewed page storage",
-    "Mais uma aplicação para dipositivos móveis, desenvolvido para uma startup de marketing de Salvador-BA, com o objetivo de ser um dashboard do cliente agenciado pela startup. Com ele você pode ver seus anúncios e pontos de anúncios disponíveis, além de um chat com o time de suporte.": "Another application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots, as well as a chat with the support team.",
-    "Mapa com pontos de anúncios disponíveis": "Map with available ad spots",
-    "Chat com time de suporte": "Chat with support team",
-    "Terceira e última aplicação criada em Ionic, visa prever quanto custaria uma corrida de táxi em Salvador-BA.": "Third and last application created in Ionic, it aims to predict how much a taxi ride in Salvador-BA would cost.",
-    "Geolocalização do usuário": "User geolocation",
-    "Api de rotas Google": "Google routes api",
-    "Bot utilizando python, api do twitter e api da riot. O bot sempre retwittava um novo tweet de um usuário específico com uma imagem e um comentário. Tudo isso rodando 24/7 num servidor aws.": "Bot using python, twitter api and riot api. The bot would always retweet a new tweet from a specific user with a image and a comment. All this running 24/7 on an aws server.",
-    "Informações de usuário de League of Legends": "League of Legends user information",
-    "Retwittar novos tweets de um usuário específico": "Retweet new tweets from a specific user",
-    "Habilidades": "Skills",
-    "Banco de Dados": "Database",
-    "Outras tecnologias": "Other Technologies",
-    "Experiência": "Experience",
-    "FullStack Júnior Developer": "FullStack Junior Developer",
-    "Presente": "Present"
+    "sobre_mim": "About me",
+    "ola": "Hi! :D",
+    "lucas_ramos" : "🖖 I'm Lucas Ramos. A young man from Salvador - Bahia who wants, through technology 💻, to improve the lives of everyone around him. I'm always eager to learn new things 💡, but unhappy when I have to repeat the same activities day after day 📉. Playing 🎮 and following the news 📰 about technology are certainly my two best hobbies. 🤩",
+    "projetos": "Projects",
+    "tecnologias": "Technologies",
+    "quero_ler": {
+			"descricao": "An application for mobile devices that aims to distribute book pdf's to people who don't have access in a simple wa and fast, with just one login.",
+			"features": [
+				"Favorite book collection",
+				"Last viewed page storage"
+			]
+		},
+		"see_now": {
+			"descricao": "Another application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots, as well as a chat with the support team.",
+			"features": [
+				"Map with available ad spots",
+				"Chat with support team"
+			]
+		},
+		"taximetro": {
+			"descricao": "Third and last application created in Ionic, it aims to predict how much a taxi ride in Salvador-BA would cost.",
+			"features": [
+				"User geolocation",
+				"Google routes api"
+			]
+		},
+		"ranger_bot": {
+			"descricao": "Bot using python, twitter api and riot api. The bot would always retweet a new tweet from a specific user with a image and a comment. All this running 24/7 on an aws server.",
+			"features": [
+				"League of Legends user information",
+				"Retweet new tweets from a specific user"
+			]
+		},
+    "habilidades": "Skills",
+    "banco_de_dados": "Database",
+    "outras_tecnologias": "Other Technologies",
+    "experiencia": "Experience",
+    "cargo": "FullStack Junior Developer",
+    "presente": "Present"
 }
