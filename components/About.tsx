@@ -11,15 +11,15 @@ const About = () => {
   const theme = state.theme;
   return (
     <section id='about' style={{backgroundColor: theme.palette.background.paper, color: theme.palette.primary.main}}>
-      <Typography variant='h3' textAlign={"center"}>
+      <Typography variant='h3' textAlign='center' fontWeight='bolder'>
         <Trans i18nKey='sobre_mim'/>
       </Typography>
-			<Grid container spacing={0} alignItems='center' justifyItems='center' margin="2rem auto">
+			<Grid container spacing={0} alignItems='center' justifyItems='center' margin='2rem auto' >
 				<Grid item xs={12} xl={4}>
-					<span className='user-photo'>
+					<span className='user-photo' style={{backgroundColor: theme.palette.background.default}}>
 						<div className='photo'>
 							<Image
-								alt="Lucas Ramos"
+								alt='Lucas Ramos'
 								src='/static/lucasramos.jpg'
 								width='100%'
 								height='100%'
@@ -36,14 +36,19 @@ const About = () => {
 					</span>
 				</Grid>
 				<Grid item  xs={12} xl={8}>
-					<div className='card'>
-						<div className='card-header'>
+					<div className='card' style={{backgroundColor: theme.palette.background.default}}>
+						<div className='card-header' style={{backgroundColor: theme.palette.secondary.main}}>
 							<span className='dot' style={{backgroundColor: 'red'}} />
 							<span className='dot' style={{backgroundColor: 'yellow'}} />
-							<span className='dot' style={{backgroundColor: 'green'}} />
+							<span className='dot' style={{backgroundColor: 'blue'}} />
 						</div>
 						<div className='card-body'>
-
+              <Typography variant='h4'>
+                <Trans i18nKey='ola'/>
+              </Typography>
+              <Typography variant='body1'>
+                <Trans i18nKey='lucas_ramos'/>
+              </Typography>
 						</div>
 					</div>
 				</Grid>
