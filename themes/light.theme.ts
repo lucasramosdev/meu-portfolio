@@ -13,7 +13,7 @@ export const LightTheme = createTheme({
 		},
 		background: {
 			default: '#fffbff',
-			paper: '#191c1a',
+			paper: '#cfcccf',
 		},
 		error: {
 			main: '#226d00',

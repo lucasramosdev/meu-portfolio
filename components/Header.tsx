@@ -93,7 +93,7 @@ const Header = () => {
 	});
 	return (
 		<header>
-			<FaLaptopCode size={"15rem"} color={theme.palette.background.paper} className='icon'/>
+			<FaLaptopCode size={"15rem"} className='icon'/>
 			<Typography variant='h1' className='name'>
 				Lucas Ramos
 			</Typography>
