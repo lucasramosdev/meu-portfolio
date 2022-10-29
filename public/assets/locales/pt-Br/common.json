@@ -15,7 +15,8 @@
 	"see_now": {
 		"descricao": "Uma aplicação para dipositivos móveis, desenvolvido para uma startup de marketing de Salvador-BA, com o objetivo de ser umdashboard do cliente agenciado pela startup. Com ele você pode ver seus anúncios e pontos de anúncios disponíveis.",
 		"features": [
-			"Mapa com pontos de anúncios disponíveis"
+			"Mapa com pontos de anúncios disponíveis",
+			"Visualização do estado atual dos anúncios ativos"
 		]
 	},
 	"twitter_bot": {

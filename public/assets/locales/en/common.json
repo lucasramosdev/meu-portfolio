@@ -15,7 +15,8 @@
 		"see_now": {
 			"descricao": "An application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots.",
 			"features": [
-				"Map with available ad spots"
+				"Map with available ad spots",
+				"View the current state of active ads"
 			]
 		},
 		"twitter_bot": {
