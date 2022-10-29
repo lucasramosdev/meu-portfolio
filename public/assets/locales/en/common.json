@@ -12,32 +12,18 @@
 				"Sending an email with details of the user's responses"
 			]
 		},
-    "quero_ler": {
-			"descricao": "An application for mobile devices that aims to distribute book pdf's to people who don't have access in a simple wa and fast, with just one login.",
-			"features": [
-				"Favorite book collection",
-				"Last viewed page storage"
-			]
-		},
 		"see_now": {
-			"descricao": "Another application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots, as well as a chat with the support team.",
+			"descricao": "An application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots.",
 			"features": [
-				"Map with available ad spots",
-				"Chat with support team"
+				"Map with available ad spots"
 			]
 		},
-		"taximetro": {
-			"descricao": "Third and last application created in Ionic, it aims to predict how much a taxi ride in Salvador-BA would cost.",
+		"twitter_bot": {
+			"descricao": "Bot using python, twitter api and any other api you want, running 24/7 on an aws server.",
 			"features": [
-				"User geolocation",
-				"Google routes api"
-			]
-		},
-		"ranger_bot": {
-			"descricao": "Bot using python, twitter api and riot api. The bot would always retweet a new tweet from a specific user with a image and a comment. All this running 24/7 on an aws server.",
-			"features": [
-				"League of Legends user information",
-				"Retweet new tweets from a specific user"
+				"Integration with any API",
+				"Retweet new tweets from a specific user",
+				"Reply Mentions"
 			]
 		},
     "habilidades": "Skills",

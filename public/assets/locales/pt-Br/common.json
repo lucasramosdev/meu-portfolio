@@ -12,32 +12,18 @@
 			"Envio de e-mail com detalhes das respostas do usuário"
 		]
 	},
-	"quero_ler": {
-		"descricao": "Uma aplicação para dispositivos móveis que visa distribuir pdf's de livro para pessoas que não possuem acesso de uma forma simples e rápida, bastando apenas um login.",
-		"features": [
-			"Coleção de livros favoritos",
-			"Armazenamento da última página vista"
-		]
-	},
 	"see_now": {
-		"descricao": "Mais uma aplicação para dipositivos móveis, desenvolvido para uma startup de marketing de Salvador-BA, com o objetivo de ser umdashboard do cliente agenciado pela startup. Com ele você pode ver seus anúncios e pontos de anúncios disponíveis, além de um chat com o time de suporte.",
+		"descricao": "Uma aplicação para dipositivos móveis, desenvolvido para uma startup de marketing de Salvador-BA, com o objetivo de ser umdashboard do cliente agenciado pela startup. Com ele você pode ver seus anúncios e pontos de anúncios disponíveis.",
 		"features": [
-			"Mapa com pontos de anúncios disponíveis",
-			"Chat com time de suporte"
+			"Mapa com pontos de anúncios disponíveis"
 		]
 	},
-	"taximetro": {
-		"descricao": "Terceira e última aplicação criada em Ionic, visa prever quanto custaria uma corrida de táxi em Salvador-BA.",
+	"twitter_bot": {
+		"descricao": "Bot utilizando python, api do twitter e qualquer outra api que você desejar, rodando 24/7 num servidor aws.",
 		"features": [
-			"Geolocalização do usuário",
-			"Api de rotas do Google"
-		]
-	},
-	"ranger_bot": {
-		"descricao": "Bot utilizando python, api do twitter e api da riot. O bot sempre retwittava um novo tweet de um usuário específico com uma imagem e um comentário. Tudo isso rodando 24/7 num servidor aws.",
-		"features": [
-			"Informações de usuário de League of Legends",
-			"Retwittar novos tweets de um usuário específico"
+			"Integração com qualquer API",
+			"Retwittar novos tweets de um usuário específico",
+			"Responder menções"
 		]
 	},
 	"habilidades": "Habilidades",
