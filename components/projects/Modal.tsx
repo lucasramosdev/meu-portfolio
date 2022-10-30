@@ -17,6 +17,7 @@ const MediaModal = ({props}: any) => {
 		position: 'absolute',
 		top: {
 			xs: '0%',
+			sm: '2%',
 			lg: '5%'
 		},
 		left: '50%',
@@ -79,8 +80,8 @@ const MediaModal = ({props}: any) => {
 						</Typography>
 						<ul style={{padding: '0 1rem'}}>
 						{card?.features.map((feature: string, idx: string) => (
-								<li style={{margin: '0.5rem auto', fontSize: '1.2rem'}}>
-									<Trans i18nKey={feature} key={idx} />
+								<li style={{margin: '0.5rem auto', fontSize: '1.2rem'}} key={idx}>
+									<Trans i18nKey={feature} />
 								</li>
 							))}
 						</ul>
