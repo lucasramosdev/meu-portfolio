@@ -37,7 +37,6 @@ export const ContextProvider = ({children}: any) => {
 
 	useEffect(() => {
 		const actualLanguage = CookieService.get('NEXT_LOCALE');
-		console.log(actualLanguage)
 		if(!actualLanguage) {
 			dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'})
 		}

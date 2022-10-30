@@ -6,26 +6,26 @@
     "tecnologias": "Technologies",
 		"quizz_app": {
 			"descricao": "A quiz with questions personalized for the user that, in addition to delivering the result at the end, also sends an email with the details of their answers. It was also made exclusively for totems and mobile devices.",
-			"features": [
-				"Custom questions",
-				"Storing user responses in a MongoDB",
-				"Sending an email with details of the user's responses"
-			]
+			"features": {
+				"0": "Custom questions",
+				"1": "Storing user responses in a MongoDB",
+				"2": "Sending an email with details of the user's responses"
+			}
 		},
 		"see_now": {
 			"descricao": "An application for mobile devices, developed for a marketing startup from Salvador-BA, with the objective of being a customer dashboard managed by the startup. With it you can see your ads and available ad spots.",
-			"features": [
-				"Map with available ad spots",
-				"View the current state of active ads"
-			]
+			"features": {
+				"0": "Map with available ad spots",
+				"1": "View the current state of active ads"
+			}
 		},
 		"twitter_bot": {
 			"descricao": "Bot using python, twitter api and any other api you want, running 24/7 on an aws server.",
-			"features": [
-				"Integration with any API",
-				"Retweet new tweets from a specific user",
-				"Reply Mentions"
-			]
+			"features": {
+				"0": "Integration with any API",
+				"1": "Retweet new tweets from a specific user",
+				"2": "Reply Mentions"
+			}
 		},
     "habilidades": "Skills",
     "banco_de_dados": "Database",

@@ -6,26 +6,26 @@
 	"tecnologias": "Tecnologias",
 	"quizz_app": {
 		"descricao": "Um quizz com perguntas perguntas personalizadas para o usuário que, além de entregar o resultado ao final, ainda envia um e-mail os detalhes de suas respostas. Também foi feito exlusivamente para totens e dispositivos móveis.",
-		"features": [
-			"Perguntas personalizadas",
-			"Armazenamento das respostas dos usuários em um MongoDB",
-			"Envio de e-mail com detalhes das respostas do usuário"
-		]
+		"features": {
+			"0": "Perguntas personalizadas",
+			"1": "Armazenamento das respostas dos usuários em um MongoDB",
+			"2": "Envio de e-mail com detalhes das respostas do usuário"
+		}
 	},
 	"see_now": {
 		"descricao": "Uma aplicação para dipositivos móveis, desenvolvido para uma startup de marketing de Salvador-BA, com o objetivo de ser umdashboard do cliente agenciado pela startup. Com ele você pode ver seus anúncios e pontos de anúncios disponíveis.",
-		"features": [
-			"Mapa com pontos de anúncios disponíveis",
-			"Visualização do estado atual dos anúncios ativos"
-		]
+		"features": {
+			"0": "Mapa com pontos de anúncios disponíveis",
+			"1": "Visualização do estado atual dos anúncios ativos"
+		}
 	},
 	"twitter_bot": {
 		"descricao": "Bot utilizando python, api do twitter e qualquer outra api que você desejar, rodando 24/7 num servidor aws.",
-		"features": [
-			"Integração com qualquer API",
-			"Retwittar novos tweets de um usuário específico",
-			"Responder menções"
-		]
+		"features": {
+			"0": "Integração com qualquer API",
+			"1": "Retwittar novos tweets de um usuário específico",
+			"2": "Responder menções"
+		}
 	},
 	"habilidades": "Habilidades",
 	"banco_de_dados": "Banco de Dados",
