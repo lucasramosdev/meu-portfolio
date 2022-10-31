@@ -13,7 +13,7 @@ type InitialStateType = {
 
 const initialState = {
 	theme: LightTheme,
-	language: ''
+	language: 'pt-BR'
 }
 
 const mainContext = createContext<{
