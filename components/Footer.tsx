@@ -13,13 +13,13 @@ const Footer = () => {
 			<Grid container className="grid-footer">
 				<IconContext.Provider value={{color: theme.palette.primary.main, size: "3rem"}}>
 				<Grid item>
-							<a href='https://github.com/lucasramosdev' target='_blank' className='col'>
+							<a href='https://github.com/lucasramosdev' target='_blank' className='col' rel="noreferrer">
 								<AiFillGithub/>
 							</a>
-						<a href='https://www.linkedin.com/in/lucasramosdev/' target='_blank' className='col'>
+						<a href='https://www.linkedin.com/in/lucasramosdev/' target='_blank' className='col' rel="noreferrer">
 							<AiFillLinkedin />
 						</a>
-						<a href='https://www.youtube.com/channel/UCTmUkQWsL83YX8A-OoVMObA' target='_blank' className='col'>
+						<a href='https://www.youtube.com/channel/UCTmUkQWsL83YX8A-OoVMObA' target='_blank' className='col' rel="noreferrer">
 							<AiFillYoutube/>
 						</a>
 				</Grid>
