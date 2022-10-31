@@ -4,11 +4,15 @@
  * @type {import('next-i18next').UserConfig}
  */
  module.exports = {
+  reactStrictMode: true,
+  swcMinify: true,
   debug: process.env.NODE_ENV === 'development',
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR', 'en'],
+    localeDetection: false,
   },
+  trailingSlash: true,
   /** To avoid issues when deploying to some paas (vercel...) */
   localePath: typeof window === 'undefined' ?
     require('path').resolve('./public/assets/locales') : './public/assets/locales',
