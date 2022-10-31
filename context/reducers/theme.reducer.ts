@@ -1,6 +1,7 @@
 import { Theme } from "@mui/material";
 import { DarkTheme, LightTheme } from '../../themes';
 import { ActionMap } from ".";
+import CookieService from "../../services/CookieService";
 
 export enum ThemeTypes {
 	Change = 'CHANGE_THEME'
@@ -18,10 +19,12 @@ export const themeReducer = (state: Theme, action: ThemeActions) =>  {
 		case ThemeTypes.Change:
 			let themeChanged: Theme;
 			if(action.payload === DarkTheme){
-				themeChanged = LightTheme
+				themeChanged = LightTheme;
+				CookieService.set('NEXT_THEME', 'light', {"sameSite": "strict"})
 			}
 			else{
 				themeChanged = DarkTheme
+				CookieService.set('NEXT_THEME', 'dark', {"sameSite": "strict"})
 			}
 
 			return themeChanged;

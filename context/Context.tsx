@@ -37,11 +37,21 @@ export const ContextProvider = ({children}: any) => {
 
 	useEffect(() => {
 		const actualLanguage = CookieService.get('NEXT_LOCALE');
-		if(!actualLanguage) {
-			dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'})
-		}
-		else {
-			dispatch({type: 'CHANGE_LANGUAGE', payload: actualLanguage})
+		if(!actualLanguage) dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'})
+		
+		dispatch({type: 'CHANGE_LANGUAGE', payload: actualLanguage})
+		
+		const actualTheme = CookieService.get('NEXT_THEME');
+		if(!actualTheme) dispatch({type: 'CHANGE_THEME', payload: LightTheme});
+
+		switch(actualTheme) {
+			case 'light':
+				dispatch({type: 'CHANGE_THEME', payload: DarkTheme});
+				break;
+			
+			case 'dark':
+				dispatch({type: 'CHANGE_THEME', payload: LightTheme});
+				break;
 		}
 	}, [])
 
