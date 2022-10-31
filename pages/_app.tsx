@@ -5,6 +5,7 @@ import { appWithTranslation } from 'next-i18next';
 import nextI18NextConfig from '../next-i18next.config.js';
 
 function MyApp({ Component, pageProps }: AppProps) {
+	console.log(nextI18NextConfig);
   return (
 		<ContextProvider>
 			<Component {...pageProps} />
