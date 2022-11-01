@@ -12,10 +12,10 @@ const MediaCard = ({props, handleOpen}: any) => {
 		open: true
 	}
 	return (
-		<Card style={{margin: '0 20px'}}>
+		<Card style={{margin: '0 20px', minHeight: '30rem'}}>
 			<CardActionArea  onClick={() => handleOpen(modal)}>
 				<CardMedia image={`/static/screenshots/${image}`} component='img' height='250' style={{objectFit: 'cover', width: '100%'}} />
-				<CardContent style={{minHeight: '12rem'}} className='card-content'>
+				<CardContent  className='card-content'>
 					<Typography gutterBottom variant='h5' component='h2' textAlign='center'>
             {headline}
           </Typography>
