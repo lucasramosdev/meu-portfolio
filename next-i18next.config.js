@@ -4,16 +4,16 @@
  * @type {import('next-i18next').UserConfig}
  */
  module.exports = {
-  debug: process.env.NODE_ENV === 'development',
+  // https://www.i18next.com/overview/configuration-options#logging
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR', 'en'],
   },
   /** To avoid issues when deploying to some paas (vercel...) */
   localePath: typeof window === 'undefined' ?
-    require('path').resolve('./public/assets/locales') : './public/assets/locales',
+    require('path').resolve('./public/assets/locales') : '/assets/locales',
 
-  reloadOnPrerender: process.env.NODE_ENV === 'development',
+
   /**
    * @link https://github.com/i18next/next-i18next#6-advanced-configuration
    */

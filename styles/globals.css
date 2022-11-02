@@ -150,22 +150,9 @@ section {
 	margin: 3rem auto !important;
 }
 
-#projects .container-with-dots {
-  margin-top: 20px;
-  padding-bottom: 10px;
-}
-
-#projects .react-multi-carousel-dot-list {
-  bottom: 0px !important;
-}
-
 #projects #__next {
   overflow: scroll;
   margin-bottom: 40px;
-}
-
-#projects .react-multi-carousel-dot button {
-  border-color: grey !important;
 }
 
 #projects .first-carousel-container {
