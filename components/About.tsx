@@ -15,7 +15,7 @@ const About = () => {
         <Trans i18nKey='sobre_mim'/>
       </Typography>
 			<Grid container spacing={0} alignItems='center' justifyItems='center' margin='2rem auto' >
-				<Grid item xs={12} xl={4}>
+				<Grid item xs={12} lg={4}>
 					<span className='user-photo' style={{backgroundColor: theme.palette.background.default}}>
 						<div className='photo'>
 							<Image
@@ -35,7 +35,7 @@ const About = () => {
 						</div>
 					</span>
 				</Grid>
-				<Grid item  xs={12} xl={8}>
+				<Grid item  xs={12} lg={8}>
 					<div className='card' style={{backgroundColor: theme.palette.background.default}}>
 						<div className='card-header' style={{backgroundColor: theme.palette.secondary.main}}>
 							<span className='dot' style={{backgroundColor: 'red'}} />
