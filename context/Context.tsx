@@ -4,6 +4,7 @@ import { DarkTheme, LightTheme } from "../themes";
 import {themeReducer} from './reducers'
 import { languageReducer } from "./reducers/language.reducer";
 import CookieService from "../services/CookieService";
+import { useRouter } from "next/router";
 
 
 type InitialStateType = {
@@ -34,12 +35,19 @@ export const useMain = () => useContext(mainContext)
 
 export const ContextProvider = ({children}: any) => {
 	const [state, dispatch] = useReducer(mainReducer, initialState)
-
+	
+	const router = useRouter();
+	
+	
 	useEffect(() => {
 		const actualLanguage = CookieService.get('NEXT_LOCALE');
 		if(!actualLanguage) dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'});
 		else if(actualLanguage === 'undefined') dispatch({type: 'CHANGE_LANGUAGE', payload: 'pt-BR'});
-		else dispatch({type: 'CHANGE_LANGUAGE', payload: actualLanguage})
+		else {
+			dispatch({type: 'CHANGE_LANGUAGE', payload: actualLanguage});
+			const {pathname, asPath, query} = router;
+			router.push({pathname, query}, asPath, {locale: actualLanguage, scroll: false});
+		}
 		
 		const actualTheme = CookieService.get('NEXT_THEME');
 		if(!actualTheme) dispatch({type: 'CHANGE_THEME', payload: LightTheme});

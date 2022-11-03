@@ -6,19 +6,11 @@ import Head from 'next/head'
 import Footer from '../components/Footer'
 import { Main } from '../components/Main'
 import { useMain } from '../context'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 
 const Home: NextPage = () => {
 	const {state} = useMain()
-	const language = state.language;
 	const theme = state.theme;
-	const router = useRouter();
 
-	useEffect(() => {
-		const {pathname, asPath, query} = router;
-		router.push({pathname, query}, asPath, {locale: language, scroll: false});
-	}, [])
   return (
 		<>
 			<main>
